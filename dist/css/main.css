@@ -4,13 +4,13 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.7s ease-out; }
+  transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
-    transition: all 0.7s ease-out; }
+    transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -45,13 +45,13 @@
     background: #1c1c1c;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.7s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #353535;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.7s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -62,7 +62,7 @@
       border: solid 3px #ee991a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.7s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
@@ -76,7 +76,7 @@
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-    transition: all 0.7s ease-out; }
+    transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
       color: #ee991a; }
 
@@ -153,7 +153,7 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #ee991a;
-        transition: all 0.7s ease-out; }
+        transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -193,7 +193,26 @@ main {
     .portfolio img:hover {
       opacity: 0.5;
       border-color: #ee991a;
-      transition: all 0.7s ease-out; }
+      transition: all 0.5s ease-out; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #ee991a;
+      color: #000; }
+      .boxes div:hover span {
+        color: #fff; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
